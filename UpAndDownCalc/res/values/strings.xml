@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">UpAndDownCalc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">UpAndDownCalc</string>
+	<string name="menu_new_game">New Game</string>
+</resources>
