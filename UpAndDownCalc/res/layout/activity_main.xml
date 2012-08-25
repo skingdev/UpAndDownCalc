@@ -3,4 +3,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <Spinner
+        android:id="@+id/number_of_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:entries="@array/number_of_cards"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/label_number_of_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/number_of_cards"
+        android:layout_centerHorizontal="true"
+        android:text="Number of cards:"
+        android:visibility="invisible" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/number_of_cards" >
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Deal"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/number_of_cards"
+        android:text="Score"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_add_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/label_number_of_cards"
+        android:layout_alignParentBottom="true"
+        android:text="Add Player"
+        android:visibility="invisible"
+        android:onClick="onClick" />
+
 </RelativeLayout>
